@@ -133,3 +133,28 @@ twine upload dist/*
 ## License
 
 MIT (see `LICENSE`).
+
+## Troubleshooting Installation ("no setup.py" error)
+
+If someone sees an error about missing `setup.py` when running `pip install -e .`,
+their pip/setuptools is too old to support modern PEP 660 editable installs.
+
+Fix:
+
+```bash
+python -m pip install --upgrade pip setuptools wheel
+pip install -e .
+```
+
+Legacy fallback: a minimal `setup.py` is included, so after upgrading it should work.
+Verify versions:
+
+```bash
+python -m pip --version
+python - <<'PY'
+import setuptools, sys
+print('setuptools', setuptools.__version__, 'python', sys.version)
+PY
+```
+
+Recommended: pip ≥ 23, setuptools ≥ 68.
