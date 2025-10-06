@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ricker-tools"
+version = "0.1.0"
+description = "Ricker wavelet conversion utilities (frequency, zero-crossing spans)."
+authors = [ { name = "Your Name", email = "you@example.com" } ]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.9"
+keywords = ["ricker", "wavelet", "seismic", "geophysics"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering :: Physics",
+]
+dependencies = [
+  "numpy>=1.22",
+]
+
+[project.urls]
+Homepage = "https://github.com/your-user/ricker-tools"
+Repository = "https://github.com/your-user/ricker-tools"
+Issues = "https://github.com/your-user/ricker-tools/issues"
+
+[project.scripts]
+ricker = "ricker_cli:main"
+
+[tool.setuptools]
+py-modules = ["ricker", "ricker_cli"]
