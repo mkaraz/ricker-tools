@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "ricker-tools"
 version = "0.1.0"
 description = "Ricker wavelet conversion utilities (frequency, zero-crossing spans)."
-authors = [ { name = "Your Name", email = "you@example.com" } ]
+authors = [ { name = "Matt Karazincir", email = "matthew.karazincir@karageo.com" } ]
 license = { text = "MIT" }
 readme = "README.md"
 requires-python = ">=3.9"
@@ -22,9 +22,9 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/your-user/ricker-tools"
-Repository = "https://github.com/your-user/ricker-tools"
-Issues = "https://github.com/your-user/ricker-tools/issues"
+Homepage = "https://github.com/mkarazincir/ricker-tools"
+Repository = "https://github.com/mkarazincir/ricker-tools"
+Issues = "https://github.com/mkarazincir/ricker-tools/issues"
 
 [project.scripts]
 ricker = "ricker_cli:main"

@@ -1,5 +1,8 @@
 """Ricker wavelet helper functions.
 
+Author: Matt Karazincir
+Created: 2025-10-06
+
 Provides conversions between a Ricker wavelet's peak (dominant) frequency
 parameter ``f`` in the standard time-domain expression and the time span
 between the two zero crossings that straddle t=0.

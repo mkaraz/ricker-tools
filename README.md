@@ -2,6 +2,9 @@
 
 This small module provides conversions between a Ricker wavelet's peak (dominant) frequency parameter \(f\) and the time span between the two zero crossings that bracket t=0.
 
+**Author:** Matt Karazincir  
+**Created:** 2025-10-06
+
 ## Formula
 
 Standard form assumed:

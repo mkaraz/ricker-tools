@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 """Command-line interface for Ricker wavelet conversions.
 
+Author: Matt Karazincir
+Created: 2025-10-06
+
 Examples:
   # From peak frequency to full and half spans
   python ricker_cli.py --freq 30
